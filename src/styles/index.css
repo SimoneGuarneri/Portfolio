@@ -1,0 +1,72 @@
+@import url('http://fonts.cdnfonts.com/css/blackest');
+@import url('http://fonts.cdnfonts.com/css/poppins');
+
+@font-face {
+    font-family: 'Blackest';
+    src: url('./fonts/BlackestBold.otf') format('otf'),
+         url('./fonts/BlackestBold.ttf') format('truetype'),
+         url('http://fonts.cdnfonts.com/css/blackest');
+}
+    
+
+@import url("./variables.css");
+@import url("./navbar.css");
+@import url("./content.css");
+@import url("./animations.css");
+@import url("./cursor.css");
+@import url("./4kResponsive.css");
+
+*{
+    margin: 0;
+    padding: 0;
+
+    /* No cursor and no select */
+    cursor: none !important;
+    user-select: none !important;
+}
+
+/* No scrollbar  */
+::-webkit-scrollbar{
+    display: none;
+}
+html, body {
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background: var(--quite-white);
+
+    position: relative;
+}
+
+/* Links adjustments */
+a{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+
+/* Svg line animation */
+#lineDiv{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+}
+#lineDiv>svg{
+    z-index: -1;
+}
+
+#fullPage{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}

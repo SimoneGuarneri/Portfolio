@@ -1,0 +1,20 @@
+:root{
+    --quite-white: #F3F3F3;
+    --black: #000;
+
+    --display-font: "Blackest", sans-serif;
+
+    --text-font: "Poppins", sans-serif;
+
+    --title-4k-size: 200px;
+    --title-desktop-size: 120px;
+    --title-mobile-size: 48px;
+
+    --text-4k-size: 36px;
+    --text-desktop-size: 24px;
+    --text-mobile-size: 14px;
+
+    --list-4k-size: 80px;
+    --list-desktop-size: 52px;
+    --list-mobile-size: 30px;
+}
