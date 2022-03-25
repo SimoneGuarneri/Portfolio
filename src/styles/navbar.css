@@ -1,0 +1,97 @@
+.navbar{
+    
+    width: calc(100% - 100px);
+    height: fit-content;
+
+    margin-top: 50px;
+    margin-left: 50px;
+    
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    z-index: 1;
+}
+
+/* Black square at the left of the name */
+#blackSquare{
+
+    width: 45px;
+    height: 45px;
+    
+    background: black;
+    z-index: 3;
+}
+
+#navbarName{
+    
+    font-family: var(--text-font);
+    font-size: 24px; /*Fixed*/
+
+    line-height: 24px;
+    padding-left: 50px;
+}
+
+/* Menu  */
+#navbarMenu{
+    display: inline-flex;
+    list-style-type: none;
+
+    z-index: 2;
+}
+
+/* Menu elements */
+#navbarMenu > li{
+    
+    font-family: var(--text-font);
+    font-weight: 500;
+    font-size: 24px; /*Fixed*/
+    
+    line-height: 16px;
+    margin-right: 45px;
+    
+    z-index: 3;
+}
+
+
+/* RESPONSIVENESS  */
+@media only screen and (max-width: 768px) {
+    .navbar{
+        width: calc(100% - 50px);
+        height: fit-content;
+
+        margin-top: 0px; /*No more margin top*/
+        margin-left: 25px;
+        
+        display: inline-flex;
+        justify-content: space-between;
+        
+        z-index: 1;
+    }
+    #blackSquare{
+        width: 45px;
+        height: 45px;
+
+        margin-top: -45px; /*Centered*/
+        margin-right: 0;
+
+        background: black;
+        
+        z-index: 3;
+    }
+
+    #navbarMenu{
+        display: block;
+    }
+    #navbarMenu > li{
+        font-family: var(--text-font);
+        font-weight: 500;
+        font-size: 24px; /*Fixed*/
+
+        margin-right: 0;
+        margin-top: 45px;
+
+        line-height: 16px;
+        z-index: 3;
+    }
+}

@@ -1,0 +1,328 @@
+/* Text */
+.pageTitle{
+
+    width: 830px;
+    height: fit-content;
+
+    margin-left: 170px;
+    margin-top: 130px;
+
+    color: black;
+
+    font-family: var(--display-font);
+    font-size: var(--title-desktop-size);
+    line-height: 100%;
+}
+.pageText{
+    
+    width: 800px;
+    
+    margin-left: 170px;
+    margin-top: 40px;
+
+    color: black;
+
+    font-family: var(--text-font);
+    font-size: var(--text-desktop-size);
+    font-weight: 300;
+}
+
+/* Social Icons */
+.icons{
+    
+    position: absolute;
+    top: 85%;
+    left: calc(100% - 140px);
+
+    list-style-type: none;
+}
+.icons>li{
+    margin-bottom: 10px;
+}
+
+/* Lists (skills, projects) */
+/* imageLi is the photo element in the about page  */
+.list{
+
+    height: fit-content;
+    color: black;
+
+    font-family: var(--display-font);
+    font-size: var(--list-desktop-size);
+    
+    line-height: 100%;
+    text-align: right;
+
+    list-style-type: none;
+    z-index: 10;
+}
+
+.skillsList{
+    margin-right: 250px;
+    margin-top: 0px;
+}
+.skillsList>li{
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.projectList{
+    margin-left: 250px;
+    margin-top: -50px;
+}
+.projectList>li{
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.imageLi{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+
+    margin-left: calc(100% - 300px);
+    margin-top: -50px;
+}
+.imageLi>img{
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+}
+
+.contactsList{
+    margin-left: 250px;
+    margin-top: -150px;
+
+    list-style-type: none;
+}
+.contactsList>#listUnderText{
+    width: 200px;
+    
+    margin-top: 20px;
+
+    line-height: 16px;
+}
+/* listButton are button inside contact list */
+.listButton{
+    width: 70px;
+    height: 70px;
+
+    margin-bottom: 10px; 
+    
+    background: black;
+
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listButton > a{
+    font-family: var(--display-font);
+    font-size: 48px;
+    color: var(--quite-white);
+}
+
+/* Text under lists */
+.contactsList>#listUnderText{
+    text-align: left;
+}
+#listUnderText{
+    font-family: var(--text-font);
+    font-size: var(--text-mobile-size);
+}
+
+/* Desktop triangle to go down */
+.triangle{
+
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+}
+
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 768px) {
+
+    /* Text */
+    .pageTitle{
+
+        width: calc(100% - 50px);
+        height: fit-content;
+        
+        margin-left: 30px;
+        margin-top: 0px;
+    
+        color: black;
+    
+        font-family: var(--display-font);
+        font-size: var(--title-mobile-size);
+        line-height: 100%;
+    }
+    .pageText{
+    
+        width: calc(100% - 100px);
+
+        margin-left: 30px;
+        margin-top: 20px;
+
+        color: black;
+    
+        font-family: var(--text-font);
+        font-size: var(--text-mobile-size);
+        font-weight: 300;
+    }
+    
+    /* Social Icons */
+    .icons{
+        
+        position: absolute;
+        top: 75%;
+        left: calc(100% - 60px);
+        
+        list-style-type: none;
+    }  
+    
+    /* Lists (skills, projects) */
+    /* imageLi is the photo element in the about page  */
+    .skillsList{
+
+        height: fit-content;
+        width: fit-content;
+
+        margin-left: calc(100% - 175px);    
+        margin-top: 0px;
+
+        color: black;
+    
+        font-family: var(--display-font);
+        font-size: var(--list-mobile-size);
+        
+        text-align: right;
+        line-height: 100%;
+
+        list-style-type: none;
+    }
+
+    .projectList{
+
+        height: fit-content;
+
+        color: black;
+
+        line-height: 100%;
+        font-family: var(--display-font);
+        font-size: var(--list-mobile-size);
+        font-weight: 500;
+        text-align: left;
+
+        margin-left: 30px;
+        margin-top: -50px;
+
+        list-style-type: none;
+    }
+    .contactsList{
+
+        height: fit-content;
+
+        margin-left: 50px;
+        margin-top: -120px;
+
+        color: black;
+
+        font-family: var(--display-font);
+        font-size: var(--list-mobile-size);
+
+        text-align: left;
+        line-height: 100%;
+
+        list-style-type: none;
+    }
+    .contactsList>#listUnderText{
+        width: 200px;
+        margin-top: 20px;
+        line-height: 16px;
+    }
+
+    .imageLi{
+        width: 150px;
+        height: 150px;
+        background-color: black;
+
+        margin-top: 0px !important;
+        margin-left: calc(100% - 150px);
+        
+    }
+    .imageLi>img{
+        width: 100px;
+        height: 100px;
+        margin: 25px;
+    }
+    .triangle{
+       display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) and (min-width : 769px) {
+
+    .contactsList{
+
+        height: fit-content;
+
+        margin-left: 50px;
+        margin-top: -100px;
+
+        color: black;
+
+        font-family: var(--display-font);
+        font-size: var(--list-mobile-size);
+
+        text-align: left;
+        line-height: 100%;
+
+        list-style-type: none;
+    }
+    .contactsList>#listUnderText{
+        width: 200px;
+        margin-top: 20px;
+        line-height: 16px;
+    }
+
+    /* listButton are button inside contact list */
+    .listButton{
+        width: 70px;
+        height: 70px;
+
+        margin-bottom: 10px; 
+        
+        background: black;
+
+        text-align: center;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .listButton > a{
+        font-family: var(--display-font);
+        font-size: 48px;
+        color: var(--quite-white);
+    }
+    .imageLi{
+        width: 200px;
+        height: 200px;
+        background-color: black;
+
+        margin-top: -0px;
+        margin-left: calc(100% - 200px);
+        
+    }
+    .imageLi>img{
+        width: 150px;
+        height: 150px;
+        margin: 25px;
+    }
+}
